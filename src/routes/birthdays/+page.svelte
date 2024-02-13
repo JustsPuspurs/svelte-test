@@ -1,10 +1,7 @@
 <script>
   import Birthday from "./Birthday.svelte";
-
-  let data = [
-    {name: "Hercules", dob: "1994-03-15"},
-    {name: "Athena", dob: "2001-08-27"}
-  ];
+  
+  export let data;
 </script>
 
 <h1>Birthday list</h1>
