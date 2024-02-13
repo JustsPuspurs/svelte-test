@@ -7,4 +7,8 @@ describe("BirthdayForm",()=>{
         render (BirthdayForm);
         expect(screen.queryByRole('from')).toBeVisible();
     });
+    it("has a method of Post",()=> {
+        render(BirthdayForm);
+        expect(screen.queryByRole('from').getAttribute('method')).toBe('post');
+    });
 });
